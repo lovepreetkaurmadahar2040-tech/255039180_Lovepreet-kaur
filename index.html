@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Personal Portfolio</title>
+  <style>
+    /* ----------------- Global Styles ----------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a3d62, #3c6382);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1e272e;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #485460;
+    }
+
+    /* ----------------- Profile Section ----------------- */
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(120deg, #00a8ff, #9c88ff);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .profile-img {
+      flex: 1 1 200px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-img img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      transition: all 0.3s ease;
+    }
+
+    .profile-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-info {
+      flex: 2 1 300px;
+      padding: 1.5rem;
+    }
+
+    .profile-info h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-info p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ----------------- Section Styles ----------------- */
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    #about {
+      background-color: #dcdde1;
+    }
+
+    #skills {
+      background-color: #c7ecee;
+    }
+
+    #projects {
+      background-color: #ffcccc;
+    }
+
+    #contact {
+      background-color: #f6e58d;
+    }
+
+    h2.section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #2f3640;
+    }
+
+    p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+      color: #2f3640;
+    }
+
+    /* ----------------- Footer ----------------- */
+    footer {
+      background: #2f3640;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* ----------------- Responsive Design ----------------- */
+    @media (max-width: 768px) {
+      .profile-info h2 {
+        font-size: 1.6rem;
+      }
+
+      .profile-img img {
+        width: 140px;
+        height: 140px;
+      }
+
+      nav a {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .profile-img img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .profile-info h2 {
+        font-size: 1.3rem;
+      }
+
+      .profile-info p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Personal Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="profile-section">
+    <div class="profile-img">
+      <img src="file:///C:/Users/manve/OneDrive/Attachments/Pictures/Camera%20Roll/lovepreet.jpeg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+      <h2>Lovepreet Kaur</h2>
+      <p>Web Developer | Designer | Coder<br>
+         Passionate about creating interactive and responsive web experiences.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a creative web developer who loves crafting responsive designs and modern web experiences using HTML, CSS, and JavaScript. I enjoy exploring new technologies and constantly improving my coding skills.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <p>HTML5, CSS3, JavaScript, React, Bootstrap, Responsive Design, Git, UI/UX Design</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p>1. Responsive Portfolio Website<br>
+       2. Bridge Tilt Monitoring App UI<br>
+       3. CGC Reviews Website using Grid Layout</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: lovepreet@example.com | Phone: +91-9876543210</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lovepreet Kaur | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
